@@ -1,5 +1,4 @@
 <template>
-
   <header>
 
       <div id="container_header">
@@ -18,7 +17,6 @@
       </div>      
 
   </header>
-
 </template>
 
 <script>
@@ -85,7 +83,6 @@ export default {
 </script>
 
 <style lang="scss">
-
     #container_header {
         display: flex;
         flex-direction: row;
@@ -93,7 +90,7 @@ export default {
         align-items: center;
         width: 80%;
         margin: 0 auto;
-        height: 100px;
+        height: 80px;
     }
     img {
         width: 50px;
@@ -103,7 +100,7 @@ export default {
         list-style-type: none;
     }
     a {
-        padding: 10px 10px 30px;
+        padding: 10px 10px 28px;
         color: black;
         font-size: 12px;
         font-weight: 600;
@@ -116,5 +113,4 @@ export default {
         border-bottom: 4px solid  #0282f9;
         color: #0282f9;
     }
-
 </style>
