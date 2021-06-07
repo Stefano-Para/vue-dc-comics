@@ -3,8 +3,7 @@
 
     <!-- header  -->
     <Header/>
-    <header>Header page</header>
-
+    
     <!-- main  -->
     <main>Main page</main>
     <!-- footer  -->
