@@ -14,8 +14,8 @@
                     <li v-for="(link, index) in links" :key="index">
                         <a href="">
                             <!-- come si fa?  -->
-                            <img src="assets/" alt="">
-                            {{ link.text }}
+                            <img :src="link.img" alt="">
+                            {{ link.text }} 
                         </a>
                     </li>
                 </ul>
@@ -33,31 +33,31 @@
                     {
                         text: "Digital Comics",
                         url: "#Digital_Comics",
-                        img: './assets/buy-comics-digital-comics.png',
+                        img: require('../assets/buy-comics-digital-comics.png'),
                         current: false
                     },
                     {
                         text: "Dc Merchandise",
                         url: "#Dc_Merchandise",
-                        img: './assets/buy-comics-merchandise.png',
+                        img: require('../assets/buy-comics-merchandise.png'),
                         current: true
                     },
                     {
                         text: "Subscription",
                         url: "#Subscription",
-                        img: './assets/buy-comics-subscriptions.png',
+                        img: require('../assets/buy-comics-subscriptions.png'),
                         current: false
                     },
                     {
                         text: "Comic Shop locator",
                         url: "#Comic_Shop_locator",
-                        img: './assets/buy-comics-shop-locator.png',
+                        img: require('../assets/buy-comics-shop-locator.png'),
                         current: false
                     },
                     {
                         text: "DC Power Visa",
                         url: "#DC_Power_Visa",
-                        img: './assets/buy-dc-power-visa.svg',
+                        img: require('../assets/buy-dc-power-visa.svg'),
                         current: false
                     },
             ]
@@ -66,7 +66,7 @@
     }
 </script>
 
-<style>
+<style scoped>
     #container_black {
         height: 80px;
         width: 100%;
@@ -80,22 +80,29 @@
         line-height: 80px;
         vertical-align: middle;
     }
-    #container_blue {
+    #container_blue {    
         display: flex;
-        flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        /* justify-content: space-around; */
         height: 100px;
         width: 100%;
         background-color: #0282f9;
-        
     }
     #navbar {
-        width: 80%;
         margin: 0 auto;
+        width: 80%;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    li {
+        list-style: none;
     }
     a {
         color: white;
+        text-decoration: none;
+
     }
     a img {
         width: 20px;

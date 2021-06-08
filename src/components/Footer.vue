@@ -1,5 +1,162 @@
 <template>
-  <div>Prova Footer</div>
+  <footer>
+
+      <div id="container_columns">
+
+            <div class="column left">
+                <div class="small_columns">
+                    <h3>Dc Comics</h3>
+                    <ul>
+                        <li>                            
+                            <a href="">
+                                Characters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Comics
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Movies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                TV  
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Games
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Videos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                News
+                            </a>
+                        </li>
+                    </ul>
+                </div> <!-- small column  -->
+                
+                <div class="small_columns">
+                    <h3>DC</h3>
+                    <ul>
+                        <li>
+                            <a href="">
+                                Terms Of Use
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Privacy policy (New)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Ad Choices
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Advertising
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Jobs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Subscriptions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Talent Workshops
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                CPSC Certificates
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Rating
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Shop Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div> <!-- small column  -->
+
+                <div class="small_columns">
+                    <h3>Sites</h3>
+                    <li>
+                        <a href="">
+                            DC
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            MAD Magazine
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            DC Kids
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            DC Universe
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            DC Power Visa
+                        </a>
+                    </li>                    
+                </div> <!-- small column  -->
+                <div class="small_columns">
+                    <h3>Shop</h3>
+                    <li>
+                        <a href="">
+                            Shop DC
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Shop DC Collectibles
+                        </a>
+                    </li>
+                </div>
+            </div>
+            <div class="column right">
+                <img src="../assets/dc-logo-bg.png" alt="">
+            </div>
+      </div>
+      <div class="last-section">
+
+      </div>
+      
+  </footer>
 </template>
 
 <script>
@@ -8,6 +165,55 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+    footer {
+        height: 300px;
+        background: url("../assets/footer-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #container_columns {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        color: white;
+    }
+    .column {
+        width: 50%;
+    }
+    .left {
+        display: flex;
+        padding-top: 15px; 
+    }
+    .right {
+        height: 300px;
+        position: relative;
+    }
+    .right img {
+        width: 60%;
+        position: absolute;
+        bottom: -40px;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .small_columns {
+        margin: 10px;   
+    }
+    li {
+        list-style: none;
+        opacity: 0.5;
+        margin: -2px 0;
+    }
+    a {
+        font-size: 10px;
+        text-decoration: none;
+        color: white;
+    }
+    .last-section {
+        position: relative;
+        background-color: #303030;
+        height: 100px;
+        z-index: 2;
+    }
 
 </style>
