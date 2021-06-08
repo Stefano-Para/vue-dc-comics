@@ -153,7 +153,22 @@
             </div>
       </div>
       <div class="last-section">
-
+          <div class="container_80">
+              <div class="sign_in_button">
+                  <a href="#Sign-In">Sign Up now!</a>
+              </div>
+              <div class="follow_us">
+                  
+                  <ul>
+                      <li><h5>Follow us</h5></li>
+                      <li v-for="(follow, index) in follows" :key="index">
+                          <a href="">
+                              <img :src="follow.img" :alt="follow.url">
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
       </div>
       
   </footer>
@@ -162,6 +177,38 @@
 <script>
 export default {
     name: 'Footer',
+    data: function () {
+        return {
+            follows: [
+                {
+                    name: "Facebook",
+                    url: "#facebookDC",
+                    img: require('../assets/footer-facebook.png')
+                },
+                {
+                    name: "Twitter",
+                    url: "#twitterDC",
+                    img: require('../assets/footer-twitter.png')
+                },
+                {
+                    name: "Twitter",
+                    url: "#yutubeDC",
+                    img: require('../assets/footer-youtube.png')
+                },
+                {
+                    name: "Twitter",
+                    url: "#pinterestDC",
+                    img: require('../assets/footer-pinterest.png')
+                },
+                {
+                    name: "Twitter",
+                    url: "#periscopeDC",
+                    img: require('../assets/footer-periscope.png')
+                },
+
+            ]
+        }
+    }
 }
 </script>
 
@@ -199,7 +246,7 @@ export default {
     .small_columns {
         margin: 10px;   
     }
-    li {
+    .small_columns li {
         list-style: none;
         opacity: 0.5;
         margin: -2px 0;
@@ -210,10 +257,47 @@ export default {
         color: white;
     }
     .last-section {
+        margin: 0 auto;
         position: relative;
         background-color: #303030;
         height: 100px;
         z-index: 2;
     }
-
+    .container_80 {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .sign_in_button a {
+        text-transform: uppercase;
+        font-size: 18px;
+        border: 2px solid #0282f9;
+        padding: 10px;
+    }
+    .follow_us {
+        color: white;
+    }
+    .follow_us img {
+        width: 20px;
+        height: 20px;
+    }
+    .follow_us ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .follow_us li {
+        margin: 0 4px;
+        text-decoration: none;
+        list-style: none;
+    }
+    li h5 {
+        color: #0282f9;
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-right: 15px;
+    }
 </style>

@@ -80,13 +80,14 @@
         line-height: 80px;
         vertical-align: middle;
     }
-    #container_blue {    
+    #container_blue { 
+        position: relative;   
         display: flex;
         align-items: center;
-        /* justify-content: space-around; */
         height: 100px;
         width: 100%;
         background-color: #0282f9;
+        z-index: 2;
     }
     #navbar {
         margin: 0 auto;
@@ -95,17 +96,20 @@
     ul {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     li {
         list-style: none;
     }
     a {
+        display: flex;
+        align-items: center;
         color: white;
         text-decoration: none;
-
     }
     a img {
-        width: 20px;
-        height: 20px;
+        width: 50px;
+        height: 50%;
+        margin-right: 10px;
     }
 </style>
