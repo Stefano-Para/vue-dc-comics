@@ -5,7 +5,7 @@
     <Header />
     
     <!-- main  -->
-    <Cards />
+    <!-- <Cards /> -->
     <Main />
 
     <!-- footer  -->
@@ -18,7 +18,7 @@
 import Header from './components/Header.vue'
 import Main from './components/Main.vue'
 import Footer from './components/Footer.vue'
-import Cards from './components/Cards.vue'
+// import Cards from './components/Cards.vue'
 
 
 
@@ -28,16 +28,16 @@ export default {
     Header,
     Main,
     Footer,
-    Cards
+    // Cards
     }
 }
 
 </script>
 
-<style lang="scss">
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+<style lang="scss" scoped>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 </style>

@@ -1,6 +1,6 @@
 <template>
     <main>
-        
+        <Cards />
         <!-- black section  -->
         <!-- <div id="container_black">            
             <div id="black_section">
@@ -25,13 +25,13 @@
 </template>
 
 <script>
-// import Cards from './components/Cards.vue'
+import Cards from './Cards.vue'
 
 
 export default {
     name: 'Main',
     components: {
-        // Cards
+        Cards
     },
     data: function () {
     return {

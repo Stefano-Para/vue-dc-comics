@@ -6,7 +6,7 @@
                 <li v-for="(card, index) in cardsList"
                 :key="index">
                 <img :src="card.thumb" alt="">
-                    <!-- {{ card.series }} -->
+                    <h5>{{ card.series }}</h5>
                 </li>
             </ul>
         </div>
@@ -97,18 +97,38 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     #container_black {
-            width: 100%;
-            background-color: black;
+        width: 100%;
+        background-color: #1c1c1c;
+        padding: 20px 0;
     }
-    ul {
+    .section_cards {
         width: 80%;
         margin: 0 auto;
+    }
+    ul {
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style: none;
+        margin: 20px;
+    }
+    li {
+        display: flex;
+        flex-direction: column;;
+        width: 16%;
+        height: 100%;
+        color: white;
+        text-transform: uppercase;
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    h5 {
+        width: 120px;
     }
     img {
-        /* width: 100%; */
+        width: 120px;
+        height: 140px;
     }
 </style>

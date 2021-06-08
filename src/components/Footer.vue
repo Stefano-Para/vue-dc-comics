@@ -214,7 +214,7 @@ export default {
 
 <style lang="scss" scoped>
     footer {
-        height: 300px;
+        // height: 300px;
         background: url("../assets/footer-bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -249,7 +249,7 @@ export default {
     .small_columns li {
         list-style: none;
         opacity: 0.5;
-        margin: -2px 0;
+        // margin: -2px 0;
     }
     a {
         font-size: 10px;
@@ -293,6 +293,7 @@ export default {
         display: flex;
         flex-direction: row;
         align-items: center;
+        // list-style-type: none;
     }
     .follow_us li {
         margin: 0 4px;
