@@ -1,9 +1,11 @@
 <template>
     <main>
+        <Cards />
         <!-- black section  -->
         <div id="container_black">            
             <div id="black_section">
-                <h5>--> Content goes Here!</h5>
+                <!-- <h5>Content goes Here!</h5> -->
+                
             </div>                           
         </div> <!--  chiusura container black  -->
 
@@ -25,45 +27,51 @@
 </template>
 
 <script>
-    export default {
-        name: 'Main',
-        data: function () {
-        return {
-            links: [
-                    {
-                        text: "Digital Comics",
-                        url: "#Digital_Comics",
-                        img: require('../assets/buy-comics-digital-comics.png'),
-                        current: false
-                    },
-                    {
-                        text: "Dc Merchandise",
-                        url: "#Dc_Merchandise",
-                        img: require('../assets/buy-comics-merchandise.png'),
-                        current: true
-                    },
-                    {
-                        text: "Subscription",
-                        url: "#Subscription",
-                        img: require('../assets/buy-comics-subscriptions.png'),
-                        current: false
-                    },
-                    {
-                        text: "Comic Shop locator",
-                        url: "#Comic_Shop_locator",
-                        img: require('../assets/buy-comics-shop-locator.png'),
-                        current: false
-                    },
-                    {
-                        text: "DC Power Visa",
-                        url: "#DC_Power_Visa",
-                        img: require('../assets/buy-dc-power-visa.svg'),
-                        current: false
-                    },
-            ]
-        }
-   }
+import Cards from './components/Cards.vue'
+
+
+export default {
+    name: 'Main',
+    components: {
+        Cards
+    },
+    data: function () {
+    return {
+        links: [
+                {
+                    text: "Digital Comics",
+                    url: "#Digital_Comics",
+                    img: require('../assets/buy-comics-digital-comics.png'),
+                    current: false
+                },
+                {
+                    text: "Dc Merchandise",
+                    url: "#Dc_Merchandise",
+                    img: require('../assets/buy-comics-merchandise.png'),
+                    current: true
+                },
+                {
+                    text: "Subscription",
+                    url: "#Subscription",
+                    img: require('../assets/buy-comics-subscriptions.png'),
+                    current: false
+                },
+                {
+                    text: "Comic Shop locator",
+                    url: "#Comic_Shop_locator",
+                    img: require('../assets/buy-comics-shop-locator.png'),
+                    current: false
+                },
+                {
+                    text: "DC Power Visa",
+                    url: "#DC_Power_Visa",
+                    img: require('../assets/buy-dc-power-visa.svg'),
+                    current: false
+                },
+        ]
     }
+    }
+}
 </script>
 
 <style scoped>

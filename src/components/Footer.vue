@@ -212,7 +212,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
     footer {
         height: 300px;
         background: url("../assets/footer-bg.jpg");
@@ -276,7 +276,12 @@ export default {
         font-size: 18px;
         border: 2px solid #0282f9;
         padding: 10px;
+            :hover {
+            background-color: #0282f9;
+            border: 2px solid blue;
+            }
     }
+    .sign_in_button 
     .follow_us {
         color: white;
     }
