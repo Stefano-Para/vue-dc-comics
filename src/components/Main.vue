@@ -1,13 +1,12 @@
 <template>
     <main>
-        <Cards />
+        
         <!-- black section  -->
-        <div id="container_black">            
+        <!-- <div id="container_black">            
             <div id="black_section">
-                <!-- <h5>Content goes Here!</h5> -->
                 
             </div>                           
-        </div> <!--  chiusura container black  -->
+        </div> -->
 
         <!-- blue section logos  -->
         <div id="container_blue">
@@ -15,7 +14,6 @@
                 <ul>
                     <li v-for="(link, index) in links" :key="index">
                         <a href="">
-                            <!-- come si fa?  -->
                             <img :src="link.img" alt="">
                             {{ link.text }} 
                         </a>
@@ -27,13 +25,13 @@
 </template>
 
 <script>
-import Cards from './components/Cards.vue'
+// import Cards from './components/Cards.vue'
 
 
 export default {
     name: 'Main',
     components: {
-        Cards
+        // Cards
     },
     data: function () {
     return {
@@ -75,11 +73,11 @@ export default {
 </script>
 
 <style scoped>
-    #container_black {
+    /* #container_black {
         height: 80px;
         width: 100%;
         background-color: black;
-    }
+    } */
     #black_section {        
         margin: 0 auto;
         height: 80px;
