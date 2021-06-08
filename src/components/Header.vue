@@ -100,7 +100,7 @@ export default {
         list-style-type: none;
     }
     a {
-        padding: 10px 10px 28px;
+        padding: 10px 0px 28px 10px;
         color: black;
         font-size: 12px;
         font-weight: 600;

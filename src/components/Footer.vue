@@ -244,7 +244,7 @@ export default {
         z-index: 1;
     }
     .small_columns {
-        margin: 10px;   
+        margin: 10px 10px 10px 0px;   
     }
     .small_columns li {
         list-style: none;

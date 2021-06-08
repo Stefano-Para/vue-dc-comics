@@ -73,11 +73,6 @@ export default {
 </script>
 
 <style scoped>
-    /* #container_black {
-        height: 80px;
-        width: 100%;
-        background-color: black;
-    } */
     #black_section {        
         margin: 0 auto;
         height: 80px;

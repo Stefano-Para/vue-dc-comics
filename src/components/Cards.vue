@@ -5,10 +5,15 @@
             <ul>
                 <li v-for="(card, index) in cardsList"
                 :key="index">
-                <img :src="card.thumb" alt="">
-                    <h5>{{ card.series }}</h5>
+                    <a href="">
+                        <img :src="card.thumb" alt="">
+                        <h5>{{ card.series }}</h5>
+                    </a>
                 </li>
             </ul>
+        </div>
+        <div id="loadmore">
+            <a href="">Load More</a>
         </div>
     </div>
 
@@ -101,7 +106,7 @@ export default {
     #container_black {
         width: 100%;
         background-color: #1c1c1c;
-        padding: 20px 0;
+        padding: 30px 0;
     }
     .section_cards {
         width: 80%;
@@ -112,23 +117,39 @@ export default {
         flex-wrap: wrap;
         justify-content: space-between;
         list-style: none;
-        margin: 20px;
     }
     li {
         display: flex;
         flex-direction: column;;
-        width: 16%;
+        width: 15%;
         height: 100%;
         color: white;
         text-transform: uppercase;
         font-size: 10px;
-        margin-bottom: 10px;
+        margin: 10px 0;
     }
     h5 {
+        margin-top: 5px;
         width: 120px;
     }
     img {
-        width: 120px;
-        height: 140px;
+        width: 100%;
+        height: 200px;
     }
+    a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    #loadmore {
+        text-align: center;
+        margin: 30px 0 10px;
+    }
+    #loadmore a {
+        padding: 10px 50px;
+        border-radius: 2px;
+        background-color: #0282f9;
+    }
+
 </style>
